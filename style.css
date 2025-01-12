@@ -520,7 +520,7 @@ section{
 
 
 .main-text{
-    margin-top: 40px;
+    margin-top: 0px;
 }
 #portfolio{
     width: 100%;
@@ -531,7 +531,7 @@ section{
     line-height: 1;
     text-align: center;
     overflow: hidden;
-    margin-bottom: 40p;
+    margin-bottom: 40px;
 }
 
 .main-text h2 span{
@@ -597,7 +597,7 @@ section{
     border-radius: 50%;
 }
 .row:hover img{
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 .row:hover .layer{
     height: 100%;
