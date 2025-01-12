@@ -524,13 +524,14 @@ section{
 }
 #portfolio{
     width: 100%;
-    margin: 0 40px;
+    margin: 40px;
 }
 .main-text h2{
     font-size: 35px;
     line-height: 1;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .main-text h2 span{
@@ -970,6 +971,11 @@ section{
         padding: 0;
         margin: 0;
         grid-template-columns: repeat(1, 1fr); /* 2 equal-width columns on tablet screens */
+    }
+    .portfolio-content img {
+        width: 100%; /* Adjust to desired fixed width */
+        height: 350px; /* Adjust to desired fixed height */
+        object-fit: fill; /* Ensures the image scales properly without distortion */
     }
     .contact-list li a:hover{
         transform: scale(1.01) translateY(-5px);
