@@ -62,12 +62,12 @@ body {
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
-    overflow: hidden;
+    overflow: visible;
 }
 .home-content {
     max-width: 600px;
     padding-top: 70px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .home-content h1 {
@@ -83,12 +83,6 @@ body {
     word-wrap: break-word; /* Prevent long words from causing horizontal scroll */
 }
 
-
-.home-sic a:hover{
-    background: #0ef;
-    color: #081b29;
-    box-shadow: 0 0 20px #0ef;
-}
 .btn{
     display: inline-block;
     padding: 12px 28px;
@@ -103,15 +97,18 @@ body {
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,0 0 25px #0ef;
+    overflow: visible;
 }
 .btn:hover{
     box-shadow: 0 0 5px cyan,
     0 0  25px cyan, 0 0 45px cyan;
+    overflow: visible;
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 25px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
+    overflow: visible;
 }
 .home-content h3 span{
     color: #0ef;
@@ -610,7 +607,7 @@ section{
     text-align: center;
 }
 
-.home-sic a {
+.home-sic a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -619,10 +616,18 @@ section{
     background: transparent;
     border: 2px solid #0ef;
     border-radius: 50%;
-    margin: 10px;
-    transition: .5s ease;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 30px 15px 30px 0;
+}
+.home-sic a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
 }
 .contact-text h2{
     font-size: 40px;
@@ -882,7 +887,6 @@ section{
 
     .about-text h2{
         font-size: 30px;
-        padding-top: 15px;
         text-align: center;
     }
     .about-text h2 span{
